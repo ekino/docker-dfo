@@ -10,7 +10,7 @@ ENV RUBY_VERSION 2.2.2
 
 # dev tools
 RUN apt-get update
-RUN apt-get install -y tig
+RUN apt-get install -y git tig
 
 # nodejs
 RUN curl -sSL "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" | tar xvz -C /usr/local --strip-components=1
